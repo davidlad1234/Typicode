@@ -10,6 +10,7 @@ import com.jpmorgan.typicode.remote.FMDataService;
 import com.jpmorgan.typicode.remote.RetrofitClient;
 
 import java.lang.ref.WeakReference;
+import java.util.Arrays;
 
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.observers.DisposableSingleObserver;
@@ -44,6 +45,7 @@ public class AlbumListPresenter implements ListPresenter {
                             if (albums != null) {
 
                                 Log.d(TAG, "Received from server: " + albums);
+                                Arrays.sort(albums);
                                 callback.showAlbums(albums);
                             }
 

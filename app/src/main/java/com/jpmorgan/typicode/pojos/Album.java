@@ -1,8 +1,10 @@
 package com.jpmorgan.typicode.pojos;
 
+import android.support.annotation.NonNull;
+
 import com.google.gson.annotations.SerializedName;
 
-public class Album {
+public class Album implements Comparable<Album>{
     @SerializedName("userId")
     private int userId;
 
@@ -58,5 +60,10 @@ public class Album {
         result = 31 * result + id;
         result = 31 * result + (title != null ? title.hashCode() : 0);
         return result;
+    }
+
+    @Override
+    public int compareTo(@NonNull Album o) {
+        return this.title.compareTo(o.title);
     }
 }
