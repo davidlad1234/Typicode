@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TypeCode</string>
+    <string name="title_album_detail">Album Detail</string>
+    <string name="data_error">Error fetching data from type code...</string>
+    <string name="artist">Artist</string>
+    <string name="album">Album</string>
+    <string name="server_error">No response from server!</string>
+    <string name="title">Title</string>
+    <string name="description">Description</string>
+    <string name="tags">Tags</string>
+    <string name="album_list_test">Album List Test</string>
+</resources>
