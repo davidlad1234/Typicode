@@ -11,5 +11,4 @@ interface LocalCallback {
 
     fun showErrorMessage(message: String)
 
-    fun showErrorMessage(server_error: Int)
 }

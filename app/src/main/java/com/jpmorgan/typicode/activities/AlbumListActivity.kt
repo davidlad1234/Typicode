@@ -83,11 +83,6 @@ class AlbumListActivity : AlbumActivity(), LocalCallback, ActivityCallback {
         toast!!.show()
     }
 
-    override fun showErrorMessage(server_error: Int) {
-        toast = Toast.makeText(this, getString(R.string.data_error), Toast.LENGTH_LONG)
-        toast!!.show()
-    }
-
     public override fun onStop() {
         super.onStop()
         albumListPresenter.onStop()
